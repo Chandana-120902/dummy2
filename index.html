@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Kanban Board</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div>
+
+
+
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front" id="card-front">
+                    <h2>Login Here</h2>
+                    <form>
+                        <input type="email" name="email" placeholder="Enter Email Here">
+                        <input type="password" name="" placeholder="Enter Password Here">
+                        <button class="btnn"><a href="#">Login</a></button>
+                    </form>
+                    <button type="button" class="btn" onclick="openRegister ()">I'm new here </button>
+                    <a href="">Forgot Password?</a>
+                </div>
+                <div class="card-back" id="card-back">
+                    <h2>SIGN UP</h2>
+                    <form>
+                        <input type="text" class="input-box" placeholder="First Name" required>
+                        <input type="text" class="input-box" placeholder="Last Name" required>
+                        <input type="email" class="input-box" placeholder="EmailId" required>
+                        <input type="password" class="input-box" placeholder="Password" required>
+                        <input type="text" class="input-box" placeholder="Phone Number" required>
+                        <button class="btnn"><a href="#">Submit</a></button>
+                    </form>
+                    <button type="button" class="btn" onclick="openLogin()">I've an account</button>
+                    <a href="">Forgot Password?</a>
+                </div>
+            </div>
+            <div class="maincontent">
+                Visualise your progress <br>on digital Kanban Boards <br>and see your team <br>move tasks from <br>to-do to done.
+            </div>
+    </section>
+
+
+
+    <script async defer>
+        var card = document.getElementById("card");
+
+        function openRegister() {
+            card.style.transform = "rotateY(180deg)";
+        }
+
+        function openLogin() {
+
+            card.style.transform = "rotateY(0deg)";
+        }
+    </script>
+
+
+
+    </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
